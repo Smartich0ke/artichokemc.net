@@ -1,0 +1,179 @@
+@import "fonts.css";
+body {
+  font-family: lato-regular;
+
+
+}
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+#title {
+
+}
+/*
+background-image: url(../img/lobby_1.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: 50%;
+*/
+#playBold {
+  font-family: lato-bold;
+}
+#scrollDown {
+  padding-top: 30px;
+  animation: bobAndFade 1.5s infinite;
+  cursor: pointer;
+}
+@keyframes bobAndFade {
+    from { opacity: 1.0; transform: translateY(0px);}
+    50% { opacity: 0.5; transform: translateY(-10px);}
+    to { opacity: 1.0; translateY(0px);}
+}
+#copyButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#copyButton:hover {
+  opacity: 1.0;
+}
+#copyText {
+  font-family: lato-regular;
+  text-decoration: underline;
+  color: blue;
+  font-size: 15px;
+  opacity: 0.0;
+  position: static;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+#joinNow {
+  padding-left: 60px;
+}
+@media screen and (max-width: 500px) {
+  #joinNow {
+    padding-left: 0px;
+  }
+}
+
+@keyframes fadeout {
+from {opacity: 1.0;}
+75% {opacity: 1.0;}
+to {opacity: 0.0;}
+}
+@keyframes bobAndFade {
+    from { opacity: 1.0; transform: translateY(0px);}
+    50% { opacity: 0.5; transform: translateY(-10px);}
+    to { opacity: 1.0; translateY(0px);}
+}
+#serverDetails {
+   display: grid;
+   grid-template-columns: [left-margin] 2vw [left-block] 46vw [right-block] 46vw [right-margin] 2vw [end];
+   grid-template-rows: [row1] auto 0vh [row2] 31vh [row3] 40vh [last-line];
+   margin-bottom: 3vh;
+   justify-content: center;
+}
+#infoBlock {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 16px #0000001f;
+  grid-column-start: left-block;
+  grid-column-end: left-block;
+  grid-row-start: row1;
+  grid-row-end: row1;
+  margin: 10px;
+  padding: 5px;
+}
+#linksBlock {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 16px #0000001f;
+  grid-column-start: right-block;
+  grid-column-end: right-block;
+  grid-row-start: row3;
+  grid-row-end: last-line;
+  margin: 10px;
+}
+#imageBlock1 {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 16px #0000001f;
+  grid-column-start: right-block;
+  grid-column-end: right-block;
+  grid-row-start: row1;
+  grid-row-end: row3;
+  margin: 10px;
+  background-image: url(../img/lobby_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center;
+}
+#imageBlock2 {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 16px #0000001f;
+  grid-column-start: left-block;
+  grid-column-end: left-block;
+  grid-row-start: row2;
+  grid-row-end: last-line;
+  margin: 10px;
+}
+/*0 0 20px 16px #0000001f;*/
+@media screen and (max-width: 600px) {
+  #serverDetails {
+    display: grid;
+    grid-template-columns: [left-block] 96vw [end];
+    grid-template-rows: [row1] 90vh [row2] 90vh [row3] 90vh [row4] 90vh [last-line];
+    margin-bottom: 3vh;
+  }
+  #infoBlock {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 16px #0000001f;
+    grid-column-start: left-block;
+    grid-column-end: left-block;
+    grid-row-start: row1;
+    grid-row-end: row1;
+    margin: 10px;
+    padding: 5px;
+  }
+  #linksBlock {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 16px #0000001f;
+    grid-column-start: left-block;
+    grid-column-end: left-block;
+    grid-row-start: row4;
+    grid-row-end: row4;
+    margin: 10px;
+  }
+  #imageBlock1 {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 16px #0000001f;
+    grid-column-start: left-block;
+    grid-column-end: left-block;
+    grid-row-start: row2;
+    grid-row-end: row2;
+    margin: 10px;
+    background-image: url(../img/lobby_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
+  }
+  #imageBlock2 {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 16px #0000001f;
+    grid-column-start: left-block;
+    grid-column-end: left-block;
+    grid-row-start: row3;
+    grid-row-end: row3;
+    margin: 10px;
+  }
+}
