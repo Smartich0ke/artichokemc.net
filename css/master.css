@@ -1,7 +1,17 @@
 @import "fonts.css";
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: lato-regular;
 
+
+}
+.linkIcon {
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-right: 5px;
 
 }
 .titleBlock {
@@ -130,6 +140,9 @@ to {opacity: 0.0;}
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-position: center;
+}
+.bold {
+  font-family: lato-bold;
 }
 /*0 0 20px 16px #0000001f;*/
 @media screen and (max-width: 600px) {
