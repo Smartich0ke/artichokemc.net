@@ -23,9 +23,6 @@ body {
   margin: 0;
 
 }
-#title {
-
-}
 /*
 background-image: url(../img/lobby_1.png);
 background-size: cover;
@@ -44,7 +41,7 @@ background-position: 50%;
 @keyframes bobAndFade {
     from { opacity: 1.0; transform: translateY(0px);}
     50% { opacity: 0.5; transform: translateY(-10px);}
-    to { opacity: 1.0; translateY(0px);}
+    to { opacity: 1.0; translateY:(0px);}
 }
 #copyButton {
   padding-left: 10px;
@@ -85,7 +82,7 @@ to {opacity: 0.0;}
 @keyframes bobAndFade {
     from { opacity: 1.0; transform: translateY(0px);}
     50% { opacity: 0.5; transform: translateY(-10px);}
-    to { opacity: 1.0; translateY(0px);}
+    to { opacity: 1.0; translateY:(0px);}
 }
 #serverDetails {
    display: grid;
