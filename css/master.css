@@ -111,7 +111,7 @@ to {opacity: 0.0;}
   grid-row-start: row1;
   grid-row-end: row3;
   margin: 10px;
-  background-image: url(../img/lobby_1.png);
+  background-image: url(../img/shader_img2.png);
   background-size: cover;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
@@ -125,6 +125,11 @@ to {opacity: 0.0;}
   grid-row-start: row2;
   grid-row-end: last-line;
   margin: 10px;
+  background-image: url(../img/shader_img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center;
 }
 /*0 0 20px 16px #0000001f;*/
 @media screen and (max-width: 600px) {
@@ -161,7 +166,7 @@ to {opacity: 0.0;}
     grid-row-start: row2;
     grid-row-end: row2;
     margin: 10px;
-    background-image: url(../img/lobby_1.png);
+    background-image: url(../img/shader_img2.png);
     background-size: cover;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
@@ -175,5 +180,10 @@ to {opacity: 0.0;}
     grid-row-start: row3;
     grid-row-end: row3;
     margin: 10px;
+    background-image: url(../img/shader_img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
   }
 }
